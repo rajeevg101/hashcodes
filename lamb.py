@@ -18,7 +18,7 @@ def solution(total_lambs):
         runningtotal=runningtotal + currentvalue
         if runningtotal > total_lambs:
             break
-        x=x+1
+        x+=1
       
     fiblist=[1,1]
     fibrunningtotal=2
@@ -29,7 +29,7 @@ def solution(total_lambs):
         fibrunningtotal=fibrunningtotal + int(fiblist[y])
         if fibrunningtotal > total_lambs:
             break
-        y=y+1
+        y+=1
                 
     answer = len(fiblist) - len(doubledList)
     
